@@ -98,11 +98,7 @@ contract AddyEthPool is ADDYWrapper, IRewardDistributionRecipient {
     // Reward rate is based on WETH i.e. adding 1 ETH reward = 500 ADDY for current period
     address public constant WETH = 0x7ceB23fD6bC0adD59E62ac25578270cFf1b9f619;
 
-    constructor(
-        address addy_,
-        address addyEth_,
-        uint256 starttime_
-    ) public {
+    constructor() public {
         addy = IERC20(0xc3FdbadC7c795EF1D6Ba111e06fF8F16A20Ea539);
         addyEth = IERC20(0xa5BF14BB945297447fE96f6cD1b31b40d31175CB);
         starttime = now;
